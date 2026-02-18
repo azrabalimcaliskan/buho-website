@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BÚHO Studio — 3D Baskının Yeni Formu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- CURSOR -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- NAV -->
+    <nav id="navbar">
+        <a href="#" class="logo">
+            <div class="logo-icon">🦉</div>
+            BÚH<span>O</span>
+        </a>
+        <ul class="nav-links desktop-only">
+            <li><a href="#categories">Kategoriler</a></li>
+            <li><a href="#how">Nasıl Çalışır</a></li>
+            <li><a href="#story">Hakkımızda</a></li>
+            <li><a href="#reviews">Yorumlar</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button class="btn-nav btn-ghost mobile-hidden">🔍 Ara</button>
+            <button class="btn-nav btn-ghost mobile-hidden">🛒 Sepet (0)</button>
+            <button class="btn-nav btn-primary mobile-hidden">Sipariş Ver</button>
+            <button class="mobile-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="mobile-menu">
+            <nav class="mobile-nav">
+                <a href="#categories" class="mobile-link">Kategoriler</a>
+                <a href="#how" class="mobile-link">Nasıl Çalışır</a>
+                <a href="#story" class="mobile-link">Hakkımızda</a>
+                <a href="#reviews" class="mobile-link">Yorumlar</a>
+            </nav>
+            <div class="mobile-actions">
+                <button class="btn-nav btn-primary w-full">Sipariş Ver</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-grid"></div>
+        <div class="hero-content">
+            <div class="hero-left">
+                <div class="hero-badge"><span class="dot"></span> Yeni Koleksiyon — 2024</div>
+                <h1>3D Baskının<br><span class="accent">Yeni Formu.</span></h1>
+                <p class="hero-sub">Kişiye özel tasarım, teknik hassasiyet ve estetik detay bir arada. Her ürün, sizin
+                    için modellenir.</p>
+                <div class="hero-ctas">
+                    <a href="#categories" class="btn-hero btn-hero-primary">Ürünleri Keşfet →</a>
+                    <a href="#how" class="btn-hero btn-hero-secondary">Kişiye Özel Tasarla</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-num">2.400+</div>
+                        <div class="stat-lbl">Üretilen Ürün</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-num">98%</div>
+                        <div class="stat-lbl">Müşteri Memnuniyeti</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-num">5–7 gün</div>
+                        <div class="stat-lbl">Ortalama Teslimat</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="hero-orb">
+                    <div class="orb-ring"></div>
+                    <div class="orb-ring"></div>
+                    <div class="orb-ring"></div>
+                    <div class="orb-center">🦉</div>
+                    <div class="orb-nodes">
+                        <div class="orb-node">🖨️</div>
+                        <div class="orb-node">⚡</div>
+                        <div class="orb-node">🎮</div>
+                        <div class="orb-node">🐾</div>
+                        <div class="orb-node">🔬</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee-section">
+        <div class="marquee-track" id="marquee">
+            <div class="marquee-item">Kişiye Özel 3D Büst <span class="sep"></span></div>
+            <div class="marquee-item">LED Heykel Serisi <span class="sep"></span></div>
+            <div class="marquee-item">RC & Drone Parçaları <span class="sep"></span></div>
+            <div class="marquee-item">Masa Düzenleyiciler <span class="sep"></span></div>
+            <div class="marquee-item">Evcil Hayvan Ürünleri <span class="sep"></span></div>
+            <div class="marquee-item">Elektronik Entegre <span class="sep"></span></div>
+            <div class="marquee-item">İsimli Mini Ürünler <span class="sep"></span></div>
+            <div class="marquee-item">Premium Tasarım <span class="sep"></span></div>
+            <div class="marquee-item">Kişiye Özel 3D Büst <span class="sep"></span></div>
+            <div class="marquee-item">LED Heykel Serisi <span class="sep"></span></div>
+            <div class="marquee-item">RC & Drone Parçaları <span class="sep"></span></div>
+            <div class="marquee-item">Masa Düzenleyiciler <span class="sep"></span></div>
+            <div class="marquee-item">Evcil Hayvan Ürünleri <span class="sep"></span></div>
+            <div class="marquee-item">Elektronik Entegre <span class="sep"></span></div>
+            <div class="marquee-item">İsimli Mini Ürünler <span class="sep"></span></div>
+            <div class="marquee-item">Premium Tasarım <span class="sep"></span></div>
+        </div>
+    </div>
+
+    <!-- CATEGORIES -->
+    <section id="categories">
+        <div class="container">
+            <div class="section-header reveal">
+                <div>
+                    <div class="section-label">Koleksiyonlar</div>
+                    <h2>Her ilgi alanına<br><em>özel üretim</em></h2>
+                </div>
+                <a href="#" class="see-all">Tümünü Gör →</a>
+            </div>
+
+            <div class="categories-grid">
+                <a href="#" class="cat-card featured reveal">
+                    <span class="cat-icon">🏆</span>
+                    <div class="cat-tag">En Çok Satılan</div>
+                    <div class="cat-title">Kişiye Özel 3D Büst</div>
+                    <div class="cat-desc">Fotoğrafınızdan 3 boyutlu portre. Gerçek yüz tarama teknolojisiyle üretilir,
+                        benzersiz hediyelik sanat eseri.</div>
+                    <div class="cat-arrow">→</div>
+                </a>
+
+                <a href="#" class="cat-card reveal delay-50">
+                    <span class="cat-icon">💡</span>
+                    <div class="cat-tag">Yeni</div>
+                    <div class="cat-title">LED'li Heykel Serisi</div>
+                    <div class="cat-desc">Çok renkli LED aydınlatmalı ambient ürünler.</div>
+                    <div class="cat-arrow">→</div>
+                </a>
+
+                <a href="#" class="cat-card reveal delay-100">
+                    <span class="cat-icon">🚗</span>
+                    <div class="cat-tag">Teknik</div>
+                    <div class="cat-title">RC & Teknik Parçalar</div>
+                    <div class="cat-desc">Hassas toleranslı baskı, drone ve RC araçlar için.</div>
+                    <div class="cat-arrow">→</div>
+                </a>
+
+                <a href="#" class="cat-card reveal delay-150">
+                    <span class="cat-icon">🖥️</span>
+                    <div class="cat-tag">Premium</div>
+                    <div class="cat-title">Masa Düzenleyiciler</div>
+                    <div class="cat-desc">Minimal setup'ınız için tasarlanmış, ergonomik çözümler.</div>
+                    <div class="cat-arrow">→</div>
+                </a>
+
+                <a href="#" class="cat-card reveal delay-200">
+                    <span class="cat-icon">✍️</span>
+                    <div class="cat-tag">Hediyelik</div>
+                    <div class="cat-title">İsimli Mini Ürünler</div>
+                    <div class="cat-desc">Ad, tarih veya özel mesajla kişiselleştirilmiş.</div>
+                    <div class="cat-arrow">→</div>
+                </a>
+
+                <a href="#" class="cat-card reveal delay-250">
+                    <span class="cat-icon">🐾</span>
+                    <div class="cat-tag">Sevimli</div>
+                    <div class="cat-title">Evcil Hayvan Ürünleri</div>
+                    <div class="cat-desc">Tüylü dostunuzun pati izi, portresini 3D'ye taşıyın.</div>
+                    <div class="cat-arrow">→</div>
+                </a>
+
+                <a href="#" class="cat-card featured reveal delay-300">
+                    <span class="cat-icon">⚡</span>
+                    <div class="cat-tag">Arduino / IoT</div>
+                    <div class="cat-title">Elektronik Entegre Tasarımlar</div>
+                    <div class="cat-desc">Arduino, ESP32 entegre aydınlatmalı ürünler. Maker kültürüyle buluşan estetik.
+                    </div>
+                    <div class="cat-arrow">→</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how">
+        <div class="container">
+            <div class="reveal text-center">
+                <div class="section-label justify-center">Süreç</div>
+                <h2>Nasıl Çalışır?</h2>
+            </div>
+
+            <div class="steps-grid">
+                <div class="step-item reveal">
+                    <div class="step-num">01</div>
+                    <div class="step-icon-wrap">📸</div>
+                    <div class="step-title">Fotoğrafını Gönder</div>
+                    <div class="step-desc">Yüksek çözünürlüklü fotoğrafını yükle. Birden fazla açıdan çekim yapmanı
+                        öneririz.</div>
+                </div>
+                <div class="step-item reveal delay-100">
+                    <div class="step-num">02</div>
+                    <div class="step-icon-wrap">💻</div>
+                    <div class="step-title">3D Modelleme</div>
+                    <div class="step-desc">Uzman tasarımcılarımız fotoğrafından detaylı 3D modeli oluşturur.</div>
+                </div>
+                <div class="step-item reveal delay-200">
+                    <div class="step-num">03</div>
+                    <div class="step-icon-wrap">🖨️</div>
+                    <div class="step-title">Baskı & Son İşlem</div>
+                    <div class="step-desc">Endüstriyel kalite printerlarla basılır, elle boyanır ve cilalanır.</div>
+                </div>
+                <div class="step-item reveal delay-300">
+                    <div class="step-num">04</div>
+                    <div class="step-icon-wrap">📦</div>
+                    <div class="step-title">Sana Özel Teslimat</div>
+                    <div class="step-desc">Özel kutusuyla kapına gelir. Hediye paketi seçeneği de mevcut.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCT DETAIL SHOWCASE -->
+    <section id="product">
+        <div class="container">
+            <div class="reveal">
+                <div class="section-label">Öne Çıkan Ürün</div>
+                <h2>LED Amber <em>Baykuş Heykel</em></h2>
+            </div>
+
+            <div class="product-showcase">
+                <div class="product-visual reveal">
+                    <div class="product-frame">
+                        <div class="product-3d">🦉</div>
+                        <div class="product-tabs">
+                            <div class="ptab active">360°</div>
+                            <div class="ptab">Detay</div>
+                            <div class="ptab">Boyut</div>
+                            <div class="ptab">LED</div>
+                        </div>
+                    </div>
+                    <div class="product-badges">
+                        <div class="pbadge"><span class="dot"></span> Stokta Mevcut</div>
+                        <div class="pbadge">⏱ 5–7 gün üretim</div>
+                        <div class="pbadge">🎨 15 renk seçeneği</div>
+                    </div>
+                </div>
+
+                <div class="product-info reveal delay-200">
+                    <div class="product-title">LED Amber<br>Baykuş Heykel</div>
+                    <div class="product-subtitle">BÚHO imza ürünü. Sıcak amber LED aydınlatma ile PLA+ baskı. Masa
+                        lambanızın yerini tutacak estetik ambient ürün.</div>
+
+                    <ul class="spec-list">
+                        <li class="spec-item"><span class="si">📐</span>
+                            <div><strong>18 × 12 × 8 cm</strong><span>Boyut</span></div>
+                        </li>
+                        <li class="spec-item"><span class="si">🧱</span>
+                            <div><strong>PLA+ Premium</strong><span>Malzeme</span></div>
+                        </li>
+                        <li class="spec-item"><span class="si">💡</span>
+                            <div><strong>RGB LED, 12W</strong><span>Aydınlatma</span></div>
+                        </li>
+                        <li class="spec-item"><span class="si">🔌</span>
+                            <div><strong>USB-C, 5V</strong><span>Güç</span></div>
+                        </li>
+                    </ul>
+
+                    <div class="color-picker">
+                        <div class="color-label">LED Renk Seçimi</div>
+                        <div class="color-swatches">
+                            <div class="swatch swatch-1 active"></div>
+                            <div class="swatch swatch-2"></div>
+                            <div class="swatch swatch-3"></div>
+                            <div class="swatch swatch-4"></div>
+                            <div class="swatch swatch-5"></div>
+                        </div>
+                    </div>
+
+                    <div class="product-price">
+                        <div class="price-main">₺890</div>
+                        <div class="price-note">Kargo dahil · Kişiselleştirme ücretsiz</div>
+                    </div>
+
+                    <div class="product-ctas">
+                        <button class="btn-customize">Bu ürünü kişiselleştir →</button>
+                        <button class="btn-wishlist">🤍</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BRAND STORY -->
+    <section id="story">
+        <div class="container">
+            <div class="story-grid">
+                <div class="story-text reveal">
+                    <div class="section-label">Marka Hikayesi</div>
+                    <h2>Teknoloji ve<br>sanatın <em>birleşimi</em></h2>
+                    <br>
+                    <p><strong>BÚHO Studio</strong>, teknik bilgi ile estetik tasarımı birleştiren genç bir üretim
+                        markasıdır.</p>
+                    <p>Her ürün, hem fonksiyonel hem karakter sahibi olacak şekilde tasarlanır. Mekanik mühendisliğin
+                        hassasiyetini sanatsal vizyonla bir araya getiriyoruz.</p>
+                    <p>Sıradan bir 3D baskı atölyesi değil; <strong>butik bir teknoloji markası</strong>yız.</p>
+
+                    <div class="story-values">
+                        <div class="value-card">
+                            <div class="value-icon">⚙️</div>
+                            <div class="value-title">Teknik Hassasiyet</div>
+                            <div class="value-desc">0.1mm toleranslı endüstriyel baskı</div>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-icon">🎨</div>
+                            <div class="value-title">Estetik Tasarım</div>
+                            <div class="value-desc">Her ürün bir sanat eseri gibi düşünülür</div>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-icon">🧑‍🔧</div>
+                            <div class="value-title">Elle Son İşlem</div>
+                            <div class="value-desc">Boyama, cilalama, bireysel kalite kontrol</div>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-icon">💌</div>
+                            <div class="value-title">Kişiye Özel</div>
+                            <div class="value-desc">Her sipariş benzersiz, hiçbiri aynı değil</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="story-visual reveal delay-200">
+                    <div class="story-img-frame">
+                        <div class="story-big-icon">🖨️</div>
+                    </div>
+                    <div class="story-floating-pill sfp-1">🦉 BÚHO Studio Ankara</div>
+                    <div class="story-floating-pill sfp-2">✅ Güvenli Satış</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section id="reviews">
+        <div class="container">
+            <div class="reveal text-center">
+                <div class="section-label justify-center">Müşteri Yorumları</div>
+                <h2>Onlar <em>anlattı,</em><br>siz karar verin</h2>
+            </div>
+
+            <div class="reviews-grid">
+                <div class="review-card reveal">
+                    <div class="stars">★★★★★</div>
+                    <div class="review-text">Kız arkadaşıma kişisel 3D büst sipariş ettim. Detay kalitesi inanılmazdı,
+                        gerçekten benzersiz bir hediye. Tekrar sipariş vereceğim kesinlikle.</div>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">👨</div>
+                        <div>
+                            <div class="reviewer-name">Arda Çelik</div>
+                            <div class="reviewer-product">Kişiye Özel 3D Büst</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card reveal delay-100">
+                    <div class="stars">★★★★★</div>
+                    <div class="review-text">RC drone için özel parça bastırdım. Tolerans hassasiyeti mükemmeldi, tek
+                        denemede tam oturdu. Artık tüm parçalarımı buradan alıyorum.</div>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">🧑‍🔧</div>
+                        <div>
+                            <div class="reviewer-name">Mehmet Kaya</div>
+                            <div class="reviewer-product">RC Teknik Parçalar</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card reveal delay-200">
+                    <div class="stars">★★★★★</div>
+                    <div class="review-text">LED'li masaüstü düzenleyici tam masa setupım ile uyum sağladı. Amber LED'in
+                        sıcaklığı mükemmel. Arkadaşlarım çok beğendi.</div>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">💻</div>
+                        <div>
+                            <div class="reviewer-name">Zeynep Arslan</div>
+                            <div class="reviewer-product">LED Masa Düzenleyici</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="social-proof-banner reveal mt-32">
+                <div class="spb-item">
+                    <div class="spb-num">4.9 ★</div>
+                    <div class="spb-lbl">Ortalama Puan</div>
+                </div>
+                <div class="spb-item">
+                    <div class="spb-num">847</div>
+                    <div class="spb-lbl">Toplam Yorum</div>
+                </div>
+                <div class="spb-item">
+                    <div class="spb-num">%98</div>
+                    <div class="spb-lbl">Tekrar Sipariş</div>
+                </div>
+                <div class="spb-item">
+                    <div class="spb-num">12</div>
+                    <div class="spb-lbl">Aktif Ülke</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOCIAL -->
+    <section id="social">
+        <div class="container">
+            <div class="reveal text-center">
+                <div class="section-label justify-center">@buhostudio</div>
+                <h2>Instagram'da<br><em>bizi takip edin</em></h2>
+            </div>
+            <div class="insta-grid">
+                <div class="insta-item reveal">🦉<div class="insta-overlay">❤️ 892</div>
+                </div>
+                <div class="insta-item reveal delay-50">🖨️<div class="insta-overlay">❤️ 1.2K
+                    </div>
+                </div>
+                <div class="insta-item reveal delay-100">🐾<div class="insta-overlay">❤️ 2.1K</div>
+                </div>
+                <div class="insta-item reveal delay-150">💡<div class="insta-overlay">❤️ 745</div>
+                </div>
+                <div class="insta-item reveal delay-200">🚗<div class="insta-overlay">❤️ 983</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <div class="newsletter-section">
+        <div class="container">
+            <div class="reveal relative z-1">
+                <div class="section-label justify-center mb-20">Abone Ol</div>
+                <div class="nl-title">Yeni Tasarımlardan<br>İlk Sen Haber Al</div>
+                <div class="nl-sub">Özel indirimler, yeni ürünler ve üretim süreçleri doğrudan mailine gelsin.</div>
+                <div class="nl-form">
+                    <input type="email" class="nl-input" placeholder="email@adresin.com">
+                    <button class="nl-btn">Abone Ol</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">BÚH<span>O</span> Studio</div>
+                    <div class="footer-tagline">Kişiye Özel. Teknik. Estetik. Mekanik hassasiyet ile sanatsal tasarımın
+                        buluştuğu üretim markası.</div>
+                    <div class="social-icons">
+                        <a href="#" class="sicon">📷</a>
+                        <a href="#" class="sicon">🎵</a>
+                        <a href="#" class="sicon">🐦</a>
+                        <a href="#" class="sicon">▶️</a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Kurumsal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Hakkımızda</a></li>
+                        <li><a href="#">Üretim Sürecimiz</a></li>
+                        <li><a href="#">Kariyer</a></li>
+                        <li><a href="#">Basın</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Destek</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">SSS</a></li>
+                        <li><a href="#">Kargo Bilgisi</a></li>
+                        <li><a href="#">İade & Değişim</a></li>
+                        <li><a href="#">Teknik Destek</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Hizmetler</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Kişiye Özel Sipariş</a></li>
+                        <li><a href="#">Toplu Sipariş</a></li>
+                        <li><a href="#">Kurumsal</a></li>
+                        <li><a href="#">İletişim</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-copy">© 2024 <span>BÚHO Studio</span>. Tüm hakları saklıdır.</div>
+                <div class="footer-legal">
+                    <a href="#">Gizlilik Politikası</a>
+                    <a href="#">Kullanım Koşulları</a>
+                    <a href="#">Çerez Politikası</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING BAR -->
+    <div class="floating-bar">
+        <a href="#" class="fb-item">🏠 Ana Sayfa</a>
+        <div class="fb-divider"></div>
+        <a href="#categories" class="fb-item">📦 Ürünler</a>
+        <div class="fb-divider"></div>
+        <a href="#how" class="fb-item">❓ Nasıl Çalışır</a>
+        <div class="fb-divider"></div>
+        <button class="fb-cta">Kişiselleştir →</button>
+    </div>
+
+
+</body>
+
+</html>
