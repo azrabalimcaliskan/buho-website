@@ -1860,13 +1860,15 @@ ANIMATIONS
 .mobile-toggle {
     display: none;
     flex-direction: column;
-    justify-content: space-between;
-    width: 24px;
-    height: 18px;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 12px 8px;
     background: transparent;
     border: none;
     cursor: pointer;
     z-index: 200;
+    position: relative;
 }
 
 .mobile-toggle span {
@@ -1876,14 +1878,26 @@ ANIMATIONS
     background: var(--white);
     transition: all 0.3s;
     transform-origin: center;
+    position: absolute;
+    left: 8px;
+}
+
+.mobile-toggle span:nth-child(1) {
+    top: 14px;
+}
+
+.mobile-toggle span:nth-child(2) {
+    bottom: 14px;
 }
 
 .mobile-toggle.active span:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
 }
 
 .mobile-toggle.active span:nth-child(2) {
-    transform: translateY(-8px) rotate(-45deg);
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
 }
 
 .mobile-menu {
@@ -2177,5 +2191,23 @@ ANIMATIONS
 
     .mobile-toggle.active span {
         background: var(--bg);
+    }
+
+    /* HIDE CUSTOM CURSOR ON MOBILE */
+    .cursor,
+    .cursor-ring {
+        display: none !important;
+    }
+
+    body {
+        cursor: auto !important;
+    }
+
+    a,
+    button,
+    .cat-card,
+    .insta-item,
+    .sicon {
+        cursor: pointer !important;
     }
 }
